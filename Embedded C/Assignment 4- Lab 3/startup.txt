@@ -1,0 +1,15 @@
+         U End_Bss
+         U End_Data
+         U End_Text
+         U main
+         U Start_Bss
+         U Start_Data
+00000000 R golbal_ptr_function
+00000000 T reset_handler
+00000000 b Stack_Top
+00000084 W Bus_fault_
+00000084 T deafult_handler
+00000084 W H_fault_handler
+00000084 W MM_fault_handler
+00000084 W NMI_handler
+00000084 W Usage_fault_handler
