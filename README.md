@@ -1,12 +1,4 @@
-<p align="center">
-  <a href="https://www.learn-in-depth-store.com/participant-page/0525c60e-73dc-4cc1-8f15-16b219812cbb?programId=0525c60e-73dc-4cc1-8f15-16b219812cbb&participantId=96a02fc0-e1df-4890-9392-f09e0126f4cd" target="_blank">
-    <img src="https://learnindepth.com/wp-content/uploads/2020/03/learn-in-depth-logo.png" alt="Learn In Depth Logo" width="200"/>
-  </a>
-</p>
 
-<h1 align="center">🎓 Mastering Embedded Systems Diploma</h1>
-
-<p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
   <b>Instructor:</b> Eng. Keroles Shenouda<br>
   <i>Learn In Depth Online Diploma</i>
