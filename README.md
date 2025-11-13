@@ -1,10 +1,28 @@
+<p align="center">
+  <a href="https://www.learn-in-depth-store.com/participant-page/0525c60e-73dc-4cc1-8f15-16b219812cbb?programId=0525c60e-73dc-4cc1-8f15-16b219812cbb&participantId=96a02fc0-e1df-4890-9392-f09e0126f4cd" target="_blank">
+    <img src="https://learnindepth.com/wp-content/uploads/2020/03/learn-in-depth-logo.png" alt="Learn In Depth Logo" width="200"/>
+  </a>
+</p>
 
+<h1 align="center">🎓 Mastering Embedded Systems Diploma</h1>
 
-# Author: Belal Hani Sabha 
+<p align="center">
+  <b>Author:</b> Belal Hani Sabha<br>
+  <b>Instructor:</b> Eng. Keroles Shenouda<br>
+  <i>Learn In Depth Online Diploma</i>
+</p>
 
-**Instructor:** Eng-Keroles Shenouda  
+---
 
-[🎓 Mastering Embedded Systems Diploma](https://learnindepth.com)
+## 📑 Table of Contents
+- [🧭 First Term](#-first-term)
+  - [🧩 Unit 1 : Diploma Prerequisites](#-unit-1--diploma-prerequisites)
+  - [💻 Unit 2 : C Programming](#-unit-2--c-programming)
+  - [⚙️ Unit 3 : Embedded C](#%EF%B8%8F-unit-3--embedded-c)
+  - [🧠 Unit 4 : System Architectures](#-unit-4--system-architectures)
+  - [🧾 Unit 5 : First Term Projects and Final Exams](#-unit-5--first-term-projects-and-final-exams)
+- [🧭 Second Term](#-second-term)
+  - [🔩 Unit 6 : Microcontroller Architectures](#-unit-6--microcontroller-architectures)
 
 ---
 
@@ -18,51 +36,51 @@
 
 ### 💻 Unit 2 : C Programming  
 
-| **Title**   | **Topic**                             |
+| **Lecture** | **Topic**                             |
 |--------------|----------------------------------------|
-| Topic 1      | Introduction to Embedded System        |
-| Topic 2      | Git Tutorial                           |
-| Topic 3      | C-Basics                               |
-| Topic 4      | Array & String                         |
-| Topic 5      | C-Functions                            |
+| Lecture 1    | Introduction to Embedded System        |
+| Lecture 2    | Git Tutorial                           |
+| Lecture 3    | C-Basics                               |
+| Lecture 4    | Array & String                         |
+| Lecture 5    | C-Functions                            |
 | Mid-Term     | Mid-Term Exam                          |
-| Topic 6      | Structures & Unions & Enums            |
-| Topic 7      | Pre-processor directives in C          |
-| Topic 8      | C Pointers                             |
+| Lecture 6    | Structures & Unions & Enums            |
+| Lecture 7    | Pre-processor Directives in C          |
+| Lecture 8    | C Pointers                             |
 
 ---
 
 ### ⚙️ Unit 3 : Embedded C  
 
-| **Title**   | **Topic**                |
+| **Lecture** | **Topic**                |
 |--------------|--------------------------|
-| Topic 1      | Embedded C Lesson 1      |
-| Topic 2      | Embedded C Lesson 2      |
-| Topic 3      | Embedded C Lesson 3      |
-| Topic 4      | Embedded C Lesson 4      |
-| Topic 5      | Embedded C Lesson 5      |
+| Lecture 1    | Embedded C Lesson 1      |
+| Lecture 2    | Embedded C Lesson 2      |
+| Lecture 3    | Embedded C Lesson 3      |
+| Lecture 4    | Embedded C Lesson 4      |
+| Lecture 5    | Embedded C Lesson 5      |
 
 ---
 
 ### 🧠 Unit 4 : System Architectures  
 
-| **Title**   | **Topic**                                           |
+| **Lecture** | **Topic**                                           |
 |--------------|-----------------------------------------------------|
-| Topic 1      | Data Structures                                     |
-| Topic 2      | Embedded Systems Architecting (Part 1)              |
-| Topic 3      | Embedded Systems Architecting (Part 2)              |
+| Lecture 1    | Data Structures                                     |
+| Lecture 2    | Embedded Systems Architecting (Part 1)              |
+| Lecture 3    | Embedded Systems Architecting (Part 2)              |
 
 ---
 
 ### 🧾 Unit 5 : First Term Projects and Final Exams  
 
-| **Title**   | **Topic**                   |
-|--------------|-----------------------------|
-| Guide 1      | C Programming Revision       |
-| Guide 2      | Review Embedded C Exam 1     |
-| Guide 3      | FIRST TERM Project-1         |
-| Guide 4      | FIRST TERM Project-2         |
-| Guide 5      | Final Exam                   |
+| **Guide** | **Topic**                   |
+|------------|-----------------------------|
+| Guide 1    | C Programming Revision       |
+| Guide 2    | Review Embedded C Exam 1     |
+| Guide 3    | FIRST TERM Project-1         |
+| Guide 4    | FIRST TERM Project-2         |
+| Guide 5    | Final Exam                   |
 
 ---
 
@@ -72,12 +90,15 @@
 
 ### 🔩 Unit 6 : Microcontroller Architectures  
 
-| **Title**   | **Topic**                          |
+| **Lecture** | **Topic**                          |
 |--------------|------------------------------------|
-| Topic 1      | Microcontroller Fundamentals 1     |
-| Topic 2      | Microcontroller Clocks             |
-| Topic 3      | Microcontroller Interrupts         |
+| Lecture 1    | Microcontroller Fundamentals 1     |
+| Lecture 2    | Microcontroller Clocks             |
+| Lecture 3    | Microcontroller Interrupts         |
 
 ---
 
-> 📘 *This README is part of the Learn In Depth Online Diploma documentation.*
+<p align="center">
+  <i>📘 This README is part of the Learn In Depth Online Diploma documentation.<br>
+  © 2025 Belal Hani Sabha</i>
+</p>
