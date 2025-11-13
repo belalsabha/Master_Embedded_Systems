@@ -67,8 +67,8 @@
 | **Lecture** | **Topic**                                           |
 |--------------|-----------------------------------------------------|
 | Lecture 1    | Data Structures                                     |
-| Lecture 2    | Embedded Systems Architecting (Part 1)              |
-| Lecture 3    | Embedded Systems Architecting (Part 2)              |
+| Lecture 2    | Embedded Systems Architecting - Part 1              |
+| Lecture 3    | Embedded Systems Architecting -Part 2               |
 
 ---
 
@@ -77,9 +77,9 @@
 | **Guide** | **Topic**                   |
 |------------|-----------------------------|
 | Guide 1    | C Programming Revision       |
-| Guide 2    | Review Embedded C Exam 1     |
-| Guide 3    | FIRST TERM Project-1         |
-| Guide 4    | FIRST TERM Project-2         |
+| Guide 2    | Review Embedded C Exam       |
+| Guide 3    | FIRST TERM Project 1         |
+| Guide 4    | FIRST TERM Project 2         |
 | Guide 5    | Final Exam                   |
 
 ---
@@ -92,7 +92,7 @@
 
 | **Lecture** | **Topic**                          |
 |--------------|------------------------------------|
-| Lecture 1    | Microcontroller Fundamentals 1     |
+| Lecture 1    | Microcontroller Fundamentals       |
 | Lecture 2    | Microcontroller Clocks             |
 | Lecture 3    | Microcontroller Interrupts         |
 
