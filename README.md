@@ -1,5 +1,3 @@
-
-
 <h1 align="center">🎓 Mastering Embedded Systems Diploma</h1>
 
 <p align="center">
@@ -7,6 +5,10 @@
   <b>Instructor:</b> Eng. Keroles Shenouda<br>
   <i>Learn In Depth Online Diploma</i>
 </p>
+
+---
+
+## ⭐ If you like the repo, consider giving it a Star!
 
 ---
 
@@ -64,7 +66,7 @@
 |--------------|-----------------------------------------------------|
 | Lecture 1    | Data Structures                                     |
 | Lecture 2    | Embedded Systems Architecting - Part 1              |
-| Lecture 3    | Embedded Systems Architecting -Part 2               |
+| Lecture 3    | Embedded Systems Architecting - Part 2              |
 
 ---
 
