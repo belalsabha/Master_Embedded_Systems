@@ -1,9 +1,8 @@
-<h1 align="center">🎓 Mastering Embedded Systems Diploma</h1>
+<h1 align="center">🎓 Mastering Embedded Systems</h1>
 
 <p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
-  <b>Instructor:</b> Eng. Keroles Shenouda<br>
-  <i>Learn In Depth Online Diploma</i>
+
 </p>
 
 ---
