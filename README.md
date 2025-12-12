@@ -1,9 +1,7 @@
-	
-MCU Essential Peripherals  lesson 1 GPIO lesson 2 GPIO & Altrnative Functions  lesson 3 Write GPIO Drivers  lesson 4 EXTI‎  بدي يااك تضيف هدول عشان بدي احطهم ع جيت هاب <h1 align="center">🎓 Mastering Embedded Systems</h1>
+<h1 align="center">🎓 Mastering Embedded Systems</h1>
 
 <p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
-
 </p>
 
 ---
@@ -21,6 +19,7 @@ MCU Essential Peripherals  lesson 1 GPIO lesson 2 GPIO & Altrnative Functions  l
   - [🧾 Unit 5 : First Term Projects and Final Exams](#-unit-5--first-term-projects-and-final-exams)
 - [🧭 Second Term](#-second-term)
   - [🔩 Unit 6 : Microcontroller Architectures](#-unit-6--microcontroller-architectures)
+  - [🔌 Unit 7 : MCU Essential Peripherals](#-unit-7--mcu-essential-peripherals)
 
 ---
 
@@ -93,6 +92,17 @@ MCU Essential Peripherals  lesson 1 GPIO lesson 2 GPIO & Altrnative Functions  l
 | Lecture 1    | Microcontroller Fundamentals       |
 | Lecture 2    | Microcontroller Clocks             |
 | Lecture 3    | Microcontroller Interrupts         |
+
+---
+
+### 🔌 Unit 7 : MCU Essential Peripherals
+
+| **Lecture** | **Topic**                                   |
+|--------------|---------------------------------------------|
+| Lecture 1    | GPIO                                        |
+| Lecture 2    | GPIO & Alternative Functions                |
+| Lecture 3    | Write GPIO Drivers                          |
+| Lecture 4    | EXTI (External Interrupts)                  |
 
 ---
 
