@@ -1,2 +1,0 @@
-KeyPad.c:14:6:Keypad_Init	8	static
-KeyPad.c:56:9:GetData_FromKeyPad	16	static
