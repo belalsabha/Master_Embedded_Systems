@@ -1,4 +1,5 @@
-<h1 align="center">🎓 Mastering Embedded Systems</h1>
+	
+MCU Essential Peripherals  lesson 1 GPIO lesson 2 GPIO & Altrnative Functions  lesson 3 Write GPIO Drivers  lesson 4 EXTI‎  بدي يااك تضيف هدول عشان بدي احطهم ع جيت هاب <h1 align="center">🎓 Mastering Embedded Systems</h1>
 
 <p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
