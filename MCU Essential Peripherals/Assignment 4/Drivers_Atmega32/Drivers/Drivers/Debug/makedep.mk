@@ -1,0 +1,12 @@
+################################################################################
+# Automatically-generated file. Do not edit or delete the file
+################################################################################
+
+HAL\7Segment_DRIVER\Seven_Segment.c
+
+HAL\LCD_DRIVER\Lcd.c
+
+main.c
+
+MCAL\IO_PORTS\IO.c
+
