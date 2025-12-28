@@ -1,0 +1,4 @@
+RCC.c:17:10:MCAL_RCC_GetSystem_ClckFreqency	4	static
+RCC.c:41:10:MCAL_RCC_Get_HClckFreqency	8	static
+RCC.c:58:10:MCAL_RCC_Get_PCLK1Freqency	8	static
+RCC.c:69:10:MCAL_RCC_Get_PCLK2Freqency	8	static
