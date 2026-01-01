@@ -1,0 +1,4 @@
+App.c:35:7:SPI_IRQ_CallBack	16	static
+App.c:52:7:USART_IRQ_Callback	8	static
+App.c:86:6:APP_Init	56	static
+App.c:168:6:APP_Start	4	static
