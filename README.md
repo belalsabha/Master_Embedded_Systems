@@ -2,30 +2,34 @@
 
 <p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
+  <i>📘 Learn In Depth Online Diploma</i>
 </p>
 
 ---
 
-## ⭐ If you like the repo, consider giving it a Star!
+## ⭐ Show Some Love
+If you like this repository, give it a ⭐!
 
 ---
 
 ## 📑 Table of Contents
-- [🧭 First Term](#-first-term)
-  - [🧩 Unit 1 : Diploma Prerequisites](#-unit-1--diploma-prerequisites)
-  - [💻 Unit 2 : C Programming](#-unit-2--c-programming)
-  - [⚙️ Unit 3 : Embedded C](#%EF%B8%8F-unit-3--embedded-c)
-  - [🧠 Unit 4 : System Architectures](#-unit-4--system-architectures)
-  - [🧾 Unit 5 : First Term Projects and Final Exams](#-unit-5--first-term-projects-and-final-exams)
-- [🧭 Second Term](#-second-term)
-  - [🔩 Unit 6 : Microcontroller Architectures](#-unit-6--microcontroller-architectures)
-  - [🔌 Unit 7 : MCU Essential Peripherals](#-unit-7--mcu-essential-peripherals)
+
+### 🧭 First Term
+- [🧩 Unit 1 : Diploma Prerequisites](#-unit-1--diploma-prerequisites)
+- [💻 Unit 2 : C Programming](#-unit-2--c-programming)
+- [⚙️ Unit 3 : Embedded C](#%EF%B8%8f-unit-3--embedded-c)
+- [🧠 Unit 4 : System Architectures](#-unit-4--system-architectures)
+- [🧾 Unit 5 : First Term Projects and Final Exams](#-unit-5--first-term-projects-and-final-exams)
+
+### 🧭 Second Term
+- [🔩 Unit 6 : Microcontroller Architectures](#-unit-6--microcontroller-architectures)
+- [🔌 Unit 7 : MCU Essential Peripherals](#-unit-7--mcu-essential-peripherals)
+- [🔗 Unit 8 : MCU Interfacing](#-unit-8--mcu-interfacing)
+- [⏱ Unit 9 : MCU Timers - ADC](#-unit-9--mcu-timers---adc)
 
 ---
 
 ## 🧭 First Term  
-
----
 
 ### 🧩 Unit 1 : Diploma Prerequisites  
 
@@ -83,8 +87,6 @@
 
 ## 🧭 Second Term  
 
----
-
 ### 🔩 Unit 6 : Microcontroller Architectures  
 
 | **Lecture** | **Topic**                          |
@@ -106,7 +108,30 @@
 
 ---
 
+### 🔗 Unit 8 : MCU Interfacing  
+
+| **Lecture** | **Topic**              |
+|--------------|-----------------------|
+| Lecture 1    | Interfacing Concepts  |
+| Lecture 2    | USART 1               |
+| Lecture 3    | USART 2               |
+| Lecture 4    | SPI 1                 |
+| Lecture 5    | SPI 2                 |
+| Lecture 6    | I2C 1                 |
+| Lecture 7    | I2C 2                 |
+
+---
+
+### ⏱ Unit 9 : MCU Timers - ADC  
+
+| **Lecture** | **Topic**  |
+|--------------|------------|
+| Lecture 1    | Timers     |
+| Lecture 2    | ADC        |
+
+---
+
 <p align="center">
-  <i>📘 This README is part of the Learn In Depth Online Diploma documentation.<br>
-  © 2025 Belal Hani Sabha</i>
+  <i>© 2025 Belal Hani Sabha</i>
 </p>
+
