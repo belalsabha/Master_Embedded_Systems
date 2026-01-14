@@ -1,0 +1,642 @@
+
+Drivers.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000394  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000408  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000000a  00800060  00800060  00000408  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000408  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000438  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000178  00000000  00000000  00000474  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000138d  00000000  00000000  000005ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000ab9  00000000  00000000  00001979  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000937  00000000  00000000  00002432  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000003e0  00000000  00000000  00002d6c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000006e0  00000000  00000000  0000314c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000086a  00000000  00000000  0000382c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000118  00000000  00000000  00004096  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 bf 00 	jmp	0x17e	; 0x17e <__vector_1>
+   8:	0c 94 e6 00 	jmp	0x1cc	; 0x1cc <__vector_2>
+   c:	0c 94 0d 01 	jmp	0x21a	; 0x21a <__vector_3>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 34 01 	jmp	0x268	; 0x268 <__vector_19>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	e4 e9       	ldi	r30, 0x94	; 148
+  68:	f3 e0       	ldi	r31, 0x03	; 3
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a0 36       	cpi	r26, 0x60	; 96
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+
+00000076 <__do_clear_bss>:
+  76:	20 e0       	ldi	r18, 0x00	; 0
+  78:	a0 e6       	ldi	r26, 0x60	; 96
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	aa 36       	cpi	r26, 0x6A	; 106
+  82:	b2 07       	cpc	r27, r18
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	0e 94 ba 00 	call	0x174	; 0x174 <main>
+  8a:	0c 94 c8 01 	jmp	0x390	; 0x390 <_exit>
+
+0000008e <__bad_interrupt>:
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <Delay_ms>:
+#include "App.h"
+
+
+/* Simple delay */
+void Delay_ms(uint16_t ms)
+{
+  92:	cf 93       	push	r28
+  94:	df 93       	push	r29
+  96:	00 d0       	rcall	.+0      	; 0x98 <Delay_ms+0x6>
+  98:	00 d0       	rcall	.+0      	; 0x9a <Delay_ms+0x8>
+  9a:	cd b7       	in	r28, 0x3d	; 61
+  9c:	de b7       	in	r29, 0x3e	; 62
+    volatile uint16_t i, j;
+    for(i=0; i<ms; i++)
+  9e:	1a 82       	std	Y+2, r1	; 0x02
+  a0:	19 82       	std	Y+1, r1	; 0x01
+  a2:	14 c0       	rjmp	.+40     	; 0xcc <Delay_ms+0x3a>
+        for(j=0; j<1000; j++);
+  a4:	1c 82       	std	Y+4, r1	; 0x04
+  a6:	1b 82       	std	Y+3, r1	; 0x03
+  a8:	06 c0       	rjmp	.+12     	; 0xb6 <Delay_ms+0x24>
+  aa:	2b 81       	ldd	r18, Y+3	; 0x03
+  ac:	3c 81       	ldd	r19, Y+4	; 0x04
+  ae:	2f 5f       	subi	r18, 0xFF	; 255
+  b0:	3f 4f       	sbci	r19, 0xFF	; 255
+  b2:	3c 83       	std	Y+4, r19	; 0x04
+  b4:	2b 83       	std	Y+3, r18	; 0x03
+  b6:	2b 81       	ldd	r18, Y+3	; 0x03
+  b8:	3c 81       	ldd	r19, Y+4	; 0x04
+  ba:	28 3e       	cpi	r18, 0xE8	; 232
+  bc:	33 40       	sbci	r19, 0x03	; 3
+  be:	a8 f3       	brcs	.-22     	; 0xaa <Delay_ms+0x18>
+
+/* Simple delay */
+void Delay_ms(uint16_t ms)
+{
+    volatile uint16_t i, j;
+    for(i=0; i<ms; i++)
+  c0:	29 81       	ldd	r18, Y+1	; 0x01
+  c2:	3a 81       	ldd	r19, Y+2	; 0x02
+  c4:	2f 5f       	subi	r18, 0xFF	; 255
+  c6:	3f 4f       	sbci	r19, 0xFF	; 255
+  c8:	3a 83       	std	Y+2, r19	; 0x02
+  ca:	29 83       	std	Y+1, r18	; 0x01
+  cc:	29 81       	ldd	r18, Y+1	; 0x01
+  ce:	3a 81       	ldd	r19, Y+2	; 0x02
+  d0:	28 17       	cp	r18, r24
+  d2:	39 07       	cpc	r19, r25
+  d4:	38 f3       	brcs	.-50     	; 0xa4 <Delay_ms+0x12>
+        for(j=0; j<1000; j++);
+}
+  d6:	0f 90       	pop	r0
+  d8:	0f 90       	pop	r0
+  da:	0f 90       	pop	r0
+  dc:	0f 90       	pop	r0
+  de:	df 91       	pop	r29
+  e0:	cf 91       	pop	r28
+  e2:	08 95       	ret
+
+000000e4 <App_Init>:
+	WDT_Config_t WDTConfig ;
+/* ================= App Initialization ================= */
+void App_Init(void)
+{
+  e4:	cf 93       	push	r28
+  e6:	df 93       	push	r29
+  e8:	00 d0       	rcall	.+0      	; 0xea <App_Init+0x6>
+  ea:	cd b7       	in	r28, 0x3d	; 61
+  ec:	de b7       	in	r29, 0x3e	; 62
+	IO_Configure_Pin_t PinNumber_Configuration ;
+	PinNumber_Configuration.IO_Pin_Number =  IO_PIN0 ;
+  ee:	81 e0       	ldi	r24, 0x01	; 1
+  f0:	89 83       	std	Y+1, r24	; 0x01
+	PinNumber_Configuration.IO_Mode = 	output_Hight ;
+  f2:	83 e0       	ldi	r24, 0x03	; 3
+  f4:	8a 83       	std	Y+2, r24	; 0x02
+	MCAL_IO_Init( IOC,  &PinNumber_Configuration);
+  f6:	be 01       	movw	r22, r28
+  f8:	6f 5f       	subi	r22, 0xFF	; 255
+  fa:	7f 4f       	sbci	r23, 0xFF	; 255
+  fc:	83 e3       	ldi	r24, 0x33	; 51
+  fe:	90 e0       	ldi	r25, 0x00	; 0
+ 100:	0e 94 5d 01 	call	0x2ba	; 0x2ba <MCAL_IO_Init>
+	MCAL_IO_WritePin(IOC , IO_PIN0 , SET_PIN);
+ 104:	41 e0       	ldi	r20, 0x01	; 1
+ 106:	61 e0       	ldi	r22, 0x01	; 1
+ 108:	83 e3       	ldi	r24, 0x33	; 51
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	0e 94 8f 01 	call	0x31e	; 0x31e <MCAL_IO_WritePin>
+	Delay_ms(100);
+ 110:	84 e6       	ldi	r24, 0x64	; 100
+ 112:	90 e0       	ldi	r25, 0x00	; 0
+ 114:	0e 94 49 00 	call	0x92	; 0x92 <Delay_ms>
+
+	
+	
+
+	WDTConfig.Watchdog_Status=WDT_Enable;
+ 118:	e2 e6       	ldi	r30, 0x62	; 98
+ 11a:	f0 e0       	ldi	r31, 0x00	; 0
+ 11c:	88 e0       	ldi	r24, 0x08	; 8
+ 11e:	80 83       	st	Z, r24
+	WDTConfig.Prescaler = WDT_PRESCALER_1s;
+ 120:	86 e0       	ldi	r24, 0x06	; 6
+ 122:	81 83       	std	Z+1, r24	; 0x01
+	
+	
+	
+}
+ 124:	0f 90       	pop	r0
+ 126:	0f 90       	pop	r0
+ 128:	df 91       	pop	r29
+ 12a:	cf 91       	pop	r28
+ 12c:	08 95       	ret
+
+0000012e <App_Run>:
+
+/* ================= App Main Loop ================= */
+void App_Run(void)
+{
+			WDT_Init(WDT ,&WDTConfig);
+ 12e:	62 e6       	ldi	r22, 0x62	; 98
+ 130:	70 e0       	ldi	r23, 0x00	; 0
+ 132:	82 e4       	ldi	r24, 0x42	; 66
+ 134:	90 e0       	ldi	r25, 0x00	; 0
+ 136:	0e 94 a0 01 	call	0x340	; 0x340 <WDT_Init>
+			Delay_ms(500);
+ 13a:	84 ef       	ldi	r24, 0xF4	; 244
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	0e 94 49 00 	call	0x92	; 0x92 <Delay_ms>
+			MCAL_IO_WritePin(IOC , IO_PIN0 , RESET_PIN);
+ 142:	40 e0       	ldi	r20, 0x00	; 0
+ 144:	61 e0       	ldi	r22, 0x01	; 1
+ 146:	83 e3       	ldi	r24, 0x33	; 51
+ 148:	90 e0       	ldi	r25, 0x00	; 0
+ 14a:	0e 94 8f 01 	call	0x31e	; 0x31e <MCAL_IO_WritePin>
+			Delay_ms(2000);
+ 14e:	80 ed       	ldi	r24, 0xD0	; 208
+ 150:	97 e0       	ldi	r25, 0x07	; 7
+ 152:	0e 94 49 00 	call	0x92	; 0x92 <Delay_ms>
+			WDT_DeInit(WDT);
+ 156:	82 e4       	ldi	r24, 0x42	; 66
+ 158:	90 e0       	ldi	r25, 0x00	; 0
+ 15a:	0e 94 9b 01 	call	0x336	; 0x336 <WDT_DeInit>
+			MCAL_IO_WritePin(IOC , IO_PIN0 , SET_PIN);
+ 15e:	41 e0       	ldi	r20, 0x01	; 1
+ 160:	61 e0       	ldi	r22, 0x01	; 1
+ 162:	83 e3       	ldi	r24, 0x33	; 51
+ 164:	90 e0       	ldi	r25, 0x00	; 0
+ 166:	0e 94 8f 01 	call	0x31e	; 0x31e <MCAL_IO_WritePin>
+			Delay_ms(2000);
+ 16a:	80 ed       	ldi	r24, 0xD0	; 208
+ 16c:	97 e0       	ldi	r25, 0x07	; 7
+ 16e:	0e 94 49 00 	call	0x92	; 0x92 <Delay_ms>
+ 172:	08 95       	ret
+
+00000174 <main>:
+/* For  Atmega32 Simulation */ 
+int main(void) {
+	
+
+
+ App_Init();
+ 174:	0e 94 72 00 	call	0xe4	; 0xe4 <App_Init>
+
+
+	while (1) {
+			
+ App_Run();
+ 178:	0e 94 97 00 	call	0x12e	; 0x12e <App_Run>
+ 17c:	fd cf       	rjmp	.-6      	; 0x178 <main+0x4>
+
+0000017e <__vector_1>:
+
+
+// ISRs
+// ISRs
+void __vector_1(void) __attribute__((signal, used)); // INT0
+void __vector_1(void) {
+ 17e:	1f 92       	push	r1
+ 180:	0f 92       	push	r0
+ 182:	0f b6       	in	r0, 0x3f	; 63
+ 184:	0f 92       	push	r0
+ 186:	11 24       	eor	r1, r1
+ 188:	2f 93       	push	r18
+ 18a:	3f 93       	push	r19
+ 18c:	4f 93       	push	r20
+ 18e:	5f 93       	push	r21
+ 190:	6f 93       	push	r22
+ 192:	7f 93       	push	r23
+ 194:	8f 93       	push	r24
+ 196:	9f 93       	push	r25
+ 198:	af 93       	push	r26
+ 19a:	bf 93       	push	r27
+ 19c:	ef 93       	push	r30
+ 19e:	ff 93       	push	r31
+	
+	 /*if (GP_IRQ_FUNC_CALLBACK[0])*/
+	  GP_IRQ_FUNC_CALLBACK[0](); 
+ 1a0:	e0 91 64 00 	lds	r30, 0x0064	; 0x800064 <GP_IRQ_FUNC_CALLBACK>
+ 1a4:	f0 91 65 00 	lds	r31, 0x0065	; 0x800065 <GP_IRQ_FUNC_CALLBACK+0x1>
+ 1a8:	09 95       	icall
+	 }
+ 1aa:	ff 91       	pop	r31
+ 1ac:	ef 91       	pop	r30
+ 1ae:	bf 91       	pop	r27
+ 1b0:	af 91       	pop	r26
+ 1b2:	9f 91       	pop	r25
+ 1b4:	8f 91       	pop	r24
+ 1b6:	7f 91       	pop	r23
+ 1b8:	6f 91       	pop	r22
+ 1ba:	5f 91       	pop	r21
+ 1bc:	4f 91       	pop	r20
+ 1be:	3f 91       	pop	r19
+ 1c0:	2f 91       	pop	r18
+ 1c2:	0f 90       	pop	r0
+ 1c4:	0f be       	out	0x3f, r0	; 63
+ 1c6:	0f 90       	pop	r0
+ 1c8:	1f 90       	pop	r1
+ 1ca:	18 95       	reti
+
+000001cc <__vector_2>:
+
+void __vector_2(void) __attribute__((signal, used)); // INT1
+void __vector_2(void) { 
+ 1cc:	1f 92       	push	r1
+ 1ce:	0f 92       	push	r0
+ 1d0:	0f b6       	in	r0, 0x3f	; 63
+ 1d2:	0f 92       	push	r0
+ 1d4:	11 24       	eor	r1, r1
+ 1d6:	2f 93       	push	r18
+ 1d8:	3f 93       	push	r19
+ 1da:	4f 93       	push	r20
+ 1dc:	5f 93       	push	r21
+ 1de:	6f 93       	push	r22
+ 1e0:	7f 93       	push	r23
+ 1e2:	8f 93       	push	r24
+ 1e4:	9f 93       	push	r25
+ 1e6:	af 93       	push	r26
+ 1e8:	bf 93       	push	r27
+ 1ea:	ef 93       	push	r30
+ 1ec:	ff 93       	push	r31
+	/*if (GP_IRQ_FUNC_CALLBACK[1])*/
+	 GP_IRQ_FUNC_CALLBACK[1](); 
+ 1ee:	e0 91 66 00 	lds	r30, 0x0066	; 0x800066 <GP_IRQ_FUNC_CALLBACK+0x2>
+ 1f2:	f0 91 67 00 	lds	r31, 0x0067	; 0x800067 <GP_IRQ_FUNC_CALLBACK+0x3>
+ 1f6:	09 95       	icall
+	}
+ 1f8:	ff 91       	pop	r31
+ 1fa:	ef 91       	pop	r30
+ 1fc:	bf 91       	pop	r27
+ 1fe:	af 91       	pop	r26
+ 200:	9f 91       	pop	r25
+ 202:	8f 91       	pop	r24
+ 204:	7f 91       	pop	r23
+ 206:	6f 91       	pop	r22
+ 208:	5f 91       	pop	r21
+ 20a:	4f 91       	pop	r20
+ 20c:	3f 91       	pop	r19
+ 20e:	2f 91       	pop	r18
+ 210:	0f 90       	pop	r0
+ 212:	0f be       	out	0x3f, r0	; 63
+ 214:	0f 90       	pop	r0
+ 216:	1f 90       	pop	r1
+ 218:	18 95       	reti
+
+0000021a <__vector_3>:
+
+void __vector_3(void) __attribute__((signal, used)); // INT2
+void __vector_3(void) { 
+ 21a:	1f 92       	push	r1
+ 21c:	0f 92       	push	r0
+ 21e:	0f b6       	in	r0, 0x3f	; 63
+ 220:	0f 92       	push	r0
+ 222:	11 24       	eor	r1, r1
+ 224:	2f 93       	push	r18
+ 226:	3f 93       	push	r19
+ 228:	4f 93       	push	r20
+ 22a:	5f 93       	push	r21
+ 22c:	6f 93       	push	r22
+ 22e:	7f 93       	push	r23
+ 230:	8f 93       	push	r24
+ 232:	9f 93       	push	r25
+ 234:	af 93       	push	r26
+ 236:	bf 93       	push	r27
+ 238:	ef 93       	push	r30
+ 23a:	ff 93       	push	r31
+	/*if (GP_IRQ_FUNC_CALLBACK[2])*/
+	 GP_IRQ_FUNC_CALLBACK[2](); 
+ 23c:	e0 91 68 00 	lds	r30, 0x0068	; 0x800068 <GP_IRQ_FUNC_CALLBACK+0x4>
+ 240:	f0 91 69 00 	lds	r31, 0x0069	; 0x800069 <GP_IRQ_FUNC_CALLBACK+0x5>
+ 244:	09 95       	icall
+ 246:	ff 91       	pop	r31
+ 248:	ef 91       	pop	r30
+ 24a:	bf 91       	pop	r27
+ 24c:	af 91       	pop	r26
+ 24e:	9f 91       	pop	r25
+ 250:	8f 91       	pop	r24
+ 252:	7f 91       	pop	r23
+ 254:	6f 91       	pop	r22
+ 256:	5f 91       	pop	r21
+ 258:	4f 91       	pop	r20
+ 25a:	3f 91       	pop	r19
+ 25c:	2f 91       	pop	r18
+ 25e:	0f 90       	pop	r0
+ 260:	0f be       	out	0x3f, r0	; 63
+ 262:	0f 90       	pop	r0
+ 264:	1f 90       	pop	r1
+ 266:	18 95       	reti
+
+00000268 <__vector_19>:
+	return I2C->TWDR;
+}
+
+void __vector_19(void) __attribute__((signal, used));
+void __vector_19(void)
+{
+ 268:	1f 92       	push	r1
+ 26a:	0f 92       	push	r0
+ 26c:	0f b6       	in	r0, 0x3f	; 63
+ 26e:	0f 92       	push	r0
+ 270:	11 24       	eor	r1, r1
+ 272:	2f 93       	push	r18
+ 274:	3f 93       	push	r19
+ 276:	4f 93       	push	r20
+ 278:	5f 93       	push	r21
+ 27a:	6f 93       	push	r22
+ 27c:	7f 93       	push	r23
+ 27e:	8f 93       	push	r24
+ 280:	9f 93       	push	r25
+ 282:	af 93       	push	r26
+ 284:	bf 93       	push	r27
+ 286:	ef 93       	push	r30
+ 288:	ff 93       	push	r31
+	if(I2C_Callback) I2C_Callback();
+ 28a:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <__data_end>
+ 28e:	f0 91 61 00 	lds	r31, 0x0061	; 0x800061 <__data_end+0x1>
+ 292:	30 97       	sbiw	r30, 0x00	; 0
+ 294:	09 f0       	breq	.+2      	; 0x298 <__vector_19+0x30>
+ 296:	09 95       	icall
+}
+ 298:	ff 91       	pop	r31
+ 29a:	ef 91       	pop	r30
+ 29c:	bf 91       	pop	r27
+ 29e:	af 91       	pop	r26
+ 2a0:	9f 91       	pop	r25
+ 2a2:	8f 91       	pop	r24
+ 2a4:	7f 91       	pop	r23
+ 2a6:	6f 91       	pop	r22
+ 2a8:	5f 91       	pop	r21
+ 2aa:	4f 91       	pop	r20
+ 2ac:	3f 91       	pop	r19
+ 2ae:	2f 91       	pop	r18
+ 2b0:	0f 90       	pop	r0
+ 2b2:	0f be       	out	0x3f, r0	; 63
+ 2b4:	0f 90       	pop	r0
+ 2b6:	1f 90       	pop	r1
+ 2b8:	18 95       	reti
+
+000002ba <MCAL_IO_Init>:
+ * @retval 				-the input port VALUE
+ * Note					-none
+ */
+uint8_t MCAL_IO_ReadPort(IOx_t *IOx){
+	return IOx->PIN;  // return value on pin from pin0 to pin7 
+}
+ 2ba:	fc 01       	movw	r30, r24
+ 2bc:	db 01       	movw	r26, r22
+ 2be:	11 96       	adiw	r26, 0x01	; 1
+ 2c0:	8c 91       	ld	r24, X
+ 2c2:	11 97       	sbiw	r26, 0x01	; 1
+ 2c4:	81 11       	cpse	r24, r1
+ 2c6:	0b c0       	rjmp	.+22     	; 0x2de <MCAL_IO_Init+0x24>
+ 2c8:	91 81       	ldd	r25, Z+1	; 0x01
+ 2ca:	8c 91       	ld	r24, X
+ 2cc:	80 95       	com	r24
+ 2ce:	89 23       	and	r24, r25
+ 2d0:	81 83       	std	Z+1, r24	; 0x01
+ 2d2:	92 81       	ldd	r25, Z+2	; 0x02
+ 2d4:	8c 91       	ld	r24, X
+ 2d6:	80 95       	com	r24
+ 2d8:	89 23       	and	r24, r25
+ 2da:	82 83       	std	Z+2, r24	; 0x02
+ 2dc:	08 95       	ret
+ 2de:	81 30       	cpi	r24, 0x01	; 1
+ 2e0:	51 f4       	brne	.+20     	; 0x2f6 <MCAL_IO_Init+0x3c>
+ 2e2:	91 81       	ldd	r25, Z+1	; 0x01
+ 2e4:	8c 91       	ld	r24, X
+ 2e6:	80 95       	com	r24
+ 2e8:	89 23       	and	r24, r25
+ 2ea:	81 83       	std	Z+1, r24	; 0x01
+ 2ec:	92 81       	ldd	r25, Z+2	; 0x02
+ 2ee:	8c 91       	ld	r24, X
+ 2f0:	89 2b       	or	r24, r25
+ 2f2:	82 83       	std	Z+2, r24	; 0x02
+ 2f4:	08 95       	ret
+ 2f6:	91 81       	ldd	r25, Z+1	; 0x01
+ 2f8:	8c 91       	ld	r24, X
+ 2fa:	89 2b       	or	r24, r25
+ 2fc:	81 83       	std	Z+1, r24	; 0x01
+ 2fe:	11 96       	adiw	r26, 0x01	; 1
+ 300:	8c 91       	ld	r24, X
+ 302:	11 97       	sbiw	r26, 0x01	; 1
+ 304:	83 30       	cpi	r24, 0x03	; 3
+ 306:	29 f4       	brne	.+10     	; 0x312 <MCAL_IO_Init+0x58>
+ 308:	92 81       	ldd	r25, Z+2	; 0x02
+ 30a:	8c 91       	ld	r24, X
+ 30c:	89 2b       	or	r24, r25
+ 30e:	82 83       	std	Z+2, r24	; 0x02
+ 310:	08 95       	ret
+ 312:	92 81       	ldd	r25, Z+2	; 0x02
+ 314:	8c 91       	ld	r24, X
+ 316:	80 95       	com	r24
+ 318:	89 23       	and	r24, r25
+ 31a:	82 83       	std	Z+2, r24	; 0x02
+ 31c:	08 95       	ret
+
+0000031e <MCAL_IO_WritePin>:
+ *@param [in] 			-PinNumber:  specifies the port bit to read. Set by @ref IO_PINS_define
+ *@param [in] 			-Value: Value
+ *@retval 				-none
+ * Note					-none
+ */
+void MCAL_IO_WritePin(IOx_t *IOx, uint8_t PinNumber, uint8_t Value){
+ 31e:	fc 01       	movw	r30, r24
+	if(Value == SET_PIN){        //user will send 1 or 0 on  bit we should take this value and put it in port register 
+ 320:	41 30       	cpi	r20, 0x01	; 1
+ 322:	21 f4       	brne	.+8      	; 0x32c <MCAL_IO_WritePin+0xe>
+		IOx->PORT |= PinNumber;
+ 324:	82 81       	ldd	r24, Z+2	; 0x02
+ 326:	68 2b       	or	r22, r24
+ 328:	62 83       	std	Z+2, r22	; 0x02
+ 32a:	08 95       	ret
+		} else {
+		IOx->PORT &= ~PinNumber;
+ 32c:	92 81       	ldd	r25, Z+2	; 0x02
+ 32e:	60 95       	com	r22
+ 330:	69 23       	and	r22, r25
+ 332:	62 83       	std	Z+2, r22	; 0x02
+ 334:	08 95       	ret
+
+00000336 <WDT_DeInit>:
+// 	 the following procedure must be  	followed:
+// 	1. In the same operation, write a logic one to WDTOE and WDE. A logic one must be writ
+// 	ten to WDE even though it is set to one before the disable operation starts.
+// 	2. Within the next four clock cycles, write a logic 0 to WDE. This disables the Watchdog.
+	
+	 WDTx->WDTCR = (1<<3) | (1<<4);
+ 336:	28 e1       	ldi	r18, 0x18	; 24
+ 338:	fc 01       	movw	r30, r24
+ 33a:	20 83       	st	Z, r18
+	 WDTx->WDTCR = 0x00;
+ 33c:	10 82       	st	Z, r1
+ 33e:	08 95       	ret
+
+00000340 <WDT_Init>:
+#include "WDT.h"
+
+
+
+
+void WDT_Init(WDT_t *WDTx , WDT_Config_t *WDT_Config){
+ 340:	0f 93       	push	r16
+ 342:	1f 93       	push	r17
+ 344:	cf 93       	push	r28
+ 346:	df 93       	push	r29
+ 348:	ec 01       	movw	r28, r24
+ 34a:	8b 01       	movw	r16, r22
+	
+	// 1- Enable WDT by : When the WDE is written to logic one, the Watchdog Timer is enabled, and if the WDE is written
+	     // to logic zero, the Watchdog Timer function is disabled
+		 
+		 if(WDT_Config->Watchdog_Status == WDT_Enable ){
+ 34c:	fb 01       	movw	r30, r22
+ 34e:	80 81       	ld	r24, Z
+ 350:	88 30       	cpi	r24, 0x08	; 8
+ 352:	21 f4       	brne	.+8      	; 0x35c <WDT_Init+0x1c>
+			 
+			 WDTx->WDTCR |= (WDT_Enable) ;
+ 354:	88 81       	ld	r24, Y
+ 356:	88 60       	ori	r24, 0x08	; 8
+ 358:	88 83       	st	Y, r24
+ 35a:	04 c0       	rjmp	.+8      	; 0x364 <WDT_Init+0x24>
+			 
+		 }else
+		 {
+			 WDT_DeInit(WDT);
+ 35c:	82 e4       	ldi	r24, 0x42	; 66
+ 35e:	90 e0       	ldi	r25, 0x00	; 0
+ 360:	0e 94 9b 01 	call	0x336	; 0x336 <WDT_DeInit>
+		 //2- Prescaler
+		 /*• Bits [2:0] – WDP2, WDP1, WDP0: Watchdog Timer Prescaler 2, 1, and 0
+		 The WDP2, WDP1, and WDP0 bits determine the Watchdog Timer prescaling when the Watch
+		 dog Timer is enabled.*/
+		 
+		 switch(WDT_Config->Prescaler){
+ 364:	f8 01       	movw	r30, r16
+ 366:	81 81       	ldd	r24, Z+1	; 0x01
+ 368:	88 30       	cpi	r24, 0x08	; 8
+ 36a:	40 f4       	brcc	.+16     	; 0x37c <WDT_Init+0x3c>
+			     case WDT_PRESCALER_520ms:  // 101
+			     case WDT_PRESCALER_1s:     // 110
+			     case WDT_PRESCALER_2s:     // 111
+				 
+			     //Clear WDP2:WDP0 bits 
+			      WDTx->WDTCR &= ~0x07;
+ 36c:	88 81       	ld	r24, Y
+ 36e:	88 7f       	andi	r24, 0xF8	; 248
+ 370:	88 83       	st	Y, r24
+
+			     WDTx->WDTCR |= (WDT_Config->Prescaler);
+ 372:	98 81       	ld	r25, Y
+ 374:	81 81       	ldd	r24, Z+1	; 0x01
+ 376:	89 2b       	or	r24, r25
+ 378:	88 83       	st	Y, r24
+			     break;
+ 37a:	05 c0       	rjmp	.+10     	; 0x386 <WDT_Init+0x46>
+
+			     default:
+			     // Default prescaler : 16 ms 
+			    WDTx->WDTCR  &= ~0x07;
+ 37c:	88 81       	ld	r24, Y
+ 37e:	88 7f       	andi	r24, 0xF8	; 248
+ 380:	88 83       	st	Y, r24
+			    WDTx->WDTCR |= WDT_PRESCALER_16ms;
+ 382:	88 81       	ld	r24, Y
+ 384:	88 83       	st	Y, r24
+		 }
+		 
+	
+	
+	
+}
+ 386:	df 91       	pop	r29
+ 388:	cf 91       	pop	r28
+ 38a:	1f 91       	pop	r17
+ 38c:	0f 91       	pop	r16
+ 38e:	08 95       	ret
+
+00000390 <_exit>:
+ 390:	f8 94       	cli
+
+00000392 <__stop_program>:
+ 392:	ff cf       	rjmp	.-2      	; 0x392 <__stop_program>
