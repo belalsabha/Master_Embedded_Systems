@@ -1,0 +1,12 @@
+Lcd.c:24:6:delay_ms	24	static
+Lcd.c:36:6:HAL_Send_Pulse_toLCD	16	static
+Lcd.c:44:6:HAL_LCD_Send4Bits	16	static
+Lcd.c:53:6:HAL_LCD_GPIOx_Init	16	static
+Lcd.c:94:6:HAL_LCD_Init	16	static
+Lcd.c:114:6:HAL_Write_Command_onLCD	16	static
+Lcd.c:138:6:HAL_Write_Character_onLCD	16	static
+Lcd.c:162:6:HAL_Write_String_onLCD	24	static
+Lcd.c:177:6:HAL_Control_LCD_Lines_And_Cursor	16	static
+Lcd.c:185:6:HAL_Clear_LCD_Screen	16	static
+Lcd.c:190:6:HAL_Display_Number_onLCD	32	static
+Lcd.c:197:6:HAL_Display_RealNumber_onLCD	40	static
