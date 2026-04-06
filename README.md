@@ -2,7 +2,6 @@
 
 <p align="center">
   <b>Author:</b> Belal Hani Sabha<br>
-  <i>📘 Learn In Depth Online Diploma</i>
 </p>
 
 ---
@@ -132,6 +131,6 @@ If you like this repository, give it a ⭐!
 ---
 
 <p align="center">
-  <i>© 2025 Belal Hani Sabha</i>
+  <i>© 2026 Belal Hani Sabha</i>
 </p>
 
