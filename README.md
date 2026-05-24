@@ -1,4 +1,7 @@
 🎓 Mastering Embedded Systems  
+# 🎓 Mastering Embedded Systems
+
+![CI](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/ci.yml/badge.svg)
 Author: Belal Hani Sabha  
 
 A practical Embedded Systems repository covering:  
