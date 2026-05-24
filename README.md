@@ -1,4 +1,4 @@
-# 🎓 Mastering Embedded Systems  
+🎓 Mastering Embedded Systems
 Author: Belal Hani Sabha
 
 A practical Embedded Systems repository covering:
