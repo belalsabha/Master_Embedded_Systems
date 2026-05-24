@@ -11,8 +11,7 @@ MCU Peripherals
 MCU Interfacing  
 Timers & ADC  
 CAN Controller  
-ARM Cortex-M3  
-ARM Cortex-M4  
+ARM Cortex-M3,M4
 Proteus Simulations  
 Embedded Projects  
 TRM & Datasheets  
