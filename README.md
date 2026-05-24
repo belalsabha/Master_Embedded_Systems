@@ -16,6 +16,6 @@ Proteus Simulations
 Embedded Projects  
 TRM & Datasheets  
 
-The repository includes assignments, driver development, practical projects, testing code, and real embedded systems applications using STM32, ATmega32, ARM Cortex-M3, and ARM Cortex-M4 architectures.  
+The repository includes assignments, driver development, practical projects, testing code and real embedded systems applications using STM32 and ATmega32.  
 
 ⭐ Don't forget to give the repository a star.
