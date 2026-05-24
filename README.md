@@ -1,7 +1,4 @@
 🎓 Mastering Embedded Systems  
-# 🎓 Mastering Embedded Systems
-
-![CI](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/ci.yml/badge.svg)
 Author: Belal Hani Sabha  
 
 A practical Embedded Systems repository covering:  
@@ -14,7 +11,7 @@ MCU Peripherals
 MCU Interfacing  
 Timers & ADC  
 CAN Controller  
-ARM Cortex-M3,M4
+ARM Cortex-M3,M4  
 Proteus Simulations  
 Embedded Projects  
 TRM & Datasheets  
