@@ -1,3 +1,0 @@
-KeyPad.c:15:6:S_delay	24	static
-KeyPad.c:22:6:Keypad_Init	24	static
-KeyPad.c:46:9:GetData_FromKeyPad	24	static
