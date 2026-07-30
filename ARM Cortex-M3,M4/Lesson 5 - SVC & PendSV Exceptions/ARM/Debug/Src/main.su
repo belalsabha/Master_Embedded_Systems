@@ -1,0 +1,5 @@
+main.c:43:6:PendSV_Handler	4	static
+main.c:50:6:OS_SVC_Services_C	24	static
+main.c:79:28:SVC_Handler	0	static,ignoring_inline_asm
+main.c:88:10:OS_SVC_SET	32	static,ignoring_inline_asm
+main.c:105:5:main	8	static
